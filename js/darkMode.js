@@ -15,6 +15,11 @@ function mudarModo(modo) {
     }
     if (modo == "normal"){
         document.getElementById('page-top').style.color = "black"
+        document.getElementById('services').style.background = "white"
+        document.getElementById('study').style.background = "white"
+        document.getElementById('extra').style.background = "white"
+        document.getElementById('portfolio').style.background = "rgb(240, 244, 245)"
+        document.getElementById('about').style.background = "rgb(240, 244, 245)"
 
     }
 }
