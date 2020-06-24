@@ -25,6 +25,10 @@
                 <a class="navbar-brand js-scroll-trigger nomeLogo" href="#page-top" id="menuNav">Márcio Nakamura</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <button type="button" id="btnNoturno" onclick="mudarModo('noturno')"> Modo noturno </button>
+				            <button type="button" id="btnNormal" onclick="mudarModo('normal')"> Modo normal </button>
+                        </li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Habilidades</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Projetos</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#study">Estudo</a></li>
@@ -92,7 +96,7 @@
             </div>
         </section>
 
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light colorStyle2" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Projetos</h2>
@@ -380,5 +384,6 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/darkMode.js"></script>
     </body>
 </html>

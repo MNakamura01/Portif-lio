@@ -54,3 +54,13 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+
+function mudarModo(modo, corDeFundoGeral) {
+    document.getElementById('geral').style.backgroundColor = corDeFundoGeral
+    document.getElementById('geral').style.color = "white"
+    if (modo == "normal"){
+        document.getElementById('geral').style.color = "black"
+
+    }
+}
