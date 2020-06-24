@@ -25,6 +25,10 @@
                 <a class="navbar-brand js-scroll-trigger nomeLogo" href="#page-top" id="menuNav">Márcio Nakamura</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <button type="button" id="btnNoturno" onclick="mudarModo('noturno')"> Modo noturno </button>
+				            <button type="button" id="btnNormal" onclick="mudarModo('normal')"> Modo normal </button>
+                        </li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Habilidades</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Projetos</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#study">Estudo</a></li>
@@ -92,7 +96,7 @@
             </div>
         </section>
 
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section background-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Projetos</h2>
@@ -190,13 +194,13 @@
                     
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <h4><br>Cursos:</h4>
+                            <h4>Sempre<br />buscando<br />evoluir!</h4>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="page-section bg-light" id="about">
+        <section class="page-section background-light" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Cursos</h2>
@@ -243,7 +247,53 @@
                 </ul>
             </div>
         </section>
-
+        <section class="page-section" id="extra">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Atividades extracurriculares</h2>
+                    <h3 class="section-subheading text-muted">Outras atividades.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/spaceapps.png" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Maio/Junho - 2020</h4>
+                                <h4 class="subheading">Hackathon Nasa Space Apps</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Primeiro Hackathon que participei, e tive como objetivo, ajudar minha equipe a desenvolver um protótipo de um site para ajudar pessoas em meio a pandemia.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/pico.PNG" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Abril/Maio - 2020</h4>
+                                <h4 class="subheading">Sistema da Pico</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Desenvolvi um protótipo de um sistema web para gerência de perfis em um app mobile.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/obr.png" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2016</h4>
+                                <h4 class="subheading">Programador em equipe de Robótica - Tecnobody</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">.</p></div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Sempre<br />buscando<br />evoluir!</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <!-- Portfolio Modals--><!-- Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -334,5 +384,6 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/darkMode.js"></script>
     </body>
 </html>
