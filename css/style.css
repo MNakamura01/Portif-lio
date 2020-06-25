@@ -632,3 +632,7 @@ body {
     width: 30px;
     display: block;
   }
+
+  #testando {
+    color: #000 !important;
+  }
