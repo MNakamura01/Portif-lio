@@ -626,3 +626,9 @@ body {
   .background-light {
     background-color: rgb(240, 244, 245);
   }
+
+  #lamp {
+    height: 30px;
+    width: 30px;
+    display: block;
+  }
