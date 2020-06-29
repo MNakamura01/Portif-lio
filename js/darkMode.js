@@ -2,7 +2,7 @@
     let status = 1
 
 
-function mudarModo(modo) {
+function mudarModo() {
     console.log(status)
     const portfolioItems = document.getElementsByClassName('portfolio-item')
 
@@ -15,9 +15,12 @@ function mudarModo(modo) {
             document.getElementById(sections[cont]).style.color = "black"
             for (const section of sections) {          
                 cont ++
-                const calcularSection = cont % 2
-                if (calcularSection == 0) {
+                var calcularSection = cont / 2
+                if (calcularSection == 1) {
                     document.getElementById(sections[cont]).style.backgroundColor = "white"
+                    if (cont === 2) {
+                        cont = 0
+                    }
                 } else {
                     document.getElementById(sections[cont]).style.background = "rgb(240, 244, 245)"
                 }
@@ -31,29 +34,21 @@ function mudarModo(modo) {
         } else {
             status = 0
             document.getElementById(sections[cont]).style.color = "white"
+            cont = 0
             for (const section of sections) {
                 cont ++
-                const calcularSection = cont % 2
-                if (calcularSection == 0) {
+                var calcularSection = cont % 2
+                if (calcularSection === 0) {
                     document.getElementById(sections[cont]).style.background = "rgba(0,0,0,0.83)"
+                    
                 } else {
                     document.getElementById(sections[cont]).style.background = "rgba(0,0,0,0.85)"
-                }
-
+                
             }
             document.getElementById('projetoTitulo').style.color = "black"
             document.getElementById('lamp').src="./assets/img/lampadabranca.png"
-            document.getElementsByClassName('portfolio-item').style.backgroundColor = "black"
+            document.querySelectorAll('.portfolio-item').style.backgroundColor = "black"
             cont = 0
+            
         } 
-    } else {
-        document.getElementById('page-top').style.color = "black"
-        document.getElementById('services').style.background = "white"
-        document.getElementById('study').style.background = "white"
-        document.getElementById('extra').style.background = "white"
-        document.getElementById('portfolio').style.background = "rgb(240, 244, 245)"
-        document.getElementById('about').style.background = "rgb(240, 244, 245)"
-
-        document.getElementById('projetoTitulo').style.color = "black"
-          }
-        }
+    }
