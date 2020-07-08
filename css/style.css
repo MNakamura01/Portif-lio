@@ -310,6 +310,7 @@ body {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
     margin-bottom: 0;
+    color: black !important; 
   }
   #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-style: italic;
@@ -612,6 +613,10 @@ body {
     display: block;
   }
 
+  #lamp:hover {
+    cursor: pointer;
+  }
+
   #testando {
     color: #000 !important;
   }
@@ -641,4 +646,13 @@ body {
     line-height: 3.25rem;
     margin-bottom: 2rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .timeline-image a {
+    color: #fff;
+  }
+
+  
+  .timeline-image a:hover {
+    text-decoration: none;;
   }
