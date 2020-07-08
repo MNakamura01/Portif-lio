@@ -636,7 +636,7 @@ body {
 
   .masthead-heading a:hover{
     transition: 200ms;
-    color: #8f8f8f;
+    color: #dadb81;
     text-decoration: none;
   }
 
@@ -655,4 +655,23 @@ body {
   
   .timeline-image a:hover {
     text-decoration: none;;
+  }
+
+  .construction {
+    color: #c7c7c7;
+  }
+  
+  .construction:hover {
+    color: yellow;
+    text-decoration: none;
+    transition: 1s;
+  }
+
+  #construction-image{  
+    width: 250px;
+    height: 100px;
+  }
+
+  .always-black {
+    color: black !important;
   }
