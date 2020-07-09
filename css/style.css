@@ -668,10 +668,14 @@ body {
   }
 
   #construction-image{  
-    width: 250px;
-    height: 100px;
+    width: 150px;
+    height: 60px;
   }
 
   .always-black {
     color: black !important;
+  }
+
+  #portfolioModal6 a:hover{
+    text-decoration: none;
   }
