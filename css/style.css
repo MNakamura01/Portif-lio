@@ -679,3 +679,7 @@ body {
   #portfolioModal6 a:hover{
     text-decoration: none;
   }
+
+  .row {
+    margin-top: 40px;
+  }
