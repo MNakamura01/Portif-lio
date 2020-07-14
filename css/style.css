@@ -635,8 +635,8 @@ body {
   }
 
   .masthead-heading a:hover{
-    transition: 200ms;
-    color: #dadb81;
+    transition: 500ms;
+    color: yellow;
     text-decoration: none;
   }
 
