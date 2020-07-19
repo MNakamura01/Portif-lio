@@ -23,7 +23,6 @@ function mudarModo(modo) {
                 }
 
             }
-            document.getElementById('lamp').src="./assets/img/lampada.png"
             document.getElementsByClassName('portfolio-item').style.backgroundColor = "white;"
 
 
